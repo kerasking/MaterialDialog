@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:context=".MyActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="init"
+        android:layout_margin="16dp"
+        android:id="@+id/button"
+        android:onClick="init"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show"
+        android:id="@+id/button2"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:onClick="show"
+        />
+
+</LinearLayout>
