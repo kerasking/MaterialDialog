@@ -16,7 +16,7 @@ Import the library, then add it to your `/settings.gradle` and `/app/build.gradl
 
 ### Step 2
 
-It very easy, just like this:
+It's very easy, just like this:
 
 ```java
 mMaterialDialog = new MaterialDialog(this);
