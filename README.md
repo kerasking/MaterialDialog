@@ -1,6 +1,6 @@
 # Material Dialog
 
-This is a Android library, I call it MaterialDialog. It's very easy to use, you just new it, then the beautiful AlertDialog will show automatedly. It is artistic, conforms to Google Material Design. I hope that you can like it, and enjoys it. ^ ^
+This is an Android library, I call it MaterialDialog. It's very easy to use, you just new it, then the beautiful AlertDialog will show automatedly. It is artistic, conforms to Google Material Design. I hope that you can like it, and enjoys it. ^ ^
 
 ## Screenshots
 
