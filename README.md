@@ -38,7 +38,7 @@ mMaterialDialog.setNegativeButton("CANCLE", new View.OnClickListener() {
     }
 });
 ```
-Or, you can init it and call the `mMaterialDialog.show()` to show the dialog simply.
+With the first init, it will show automatedly. Or, you can init it and call the `mMaterialDialog.show()` to show the dialog simply.
 
 ## About me
 
