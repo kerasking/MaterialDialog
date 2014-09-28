@@ -43,4 +43,8 @@ Or, you can init it and call the `mMaterialDialog.show()` to show the dialog sim
 ## About me
 
 A student in mainland China. (^ ^ Thanks daimajia)
+
 My blog: http://drakeet.me
+
+More about me: http://drakeet.me/about
+
