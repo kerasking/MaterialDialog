@@ -10,7 +10,7 @@ This is an Android library, I call it MaterialDialog. It's very easy to use. Jus
 ## Usage
 ### Step 1
 
-Import the library, then add it to your `settings.gradle` and `/app/build.gradle`, if you don't know how to do it, you can read my blog for help.
+Import the library, then add it to your `/settings.gradle` and `/app/build.gradle`, if you don't know how to do it, you can read my blog for help.
 
 [Android Studio 简介及导入 jar 包和第三方开源库方法](http://drakeet.me/android-studio)
 
