@@ -38,6 +38,30 @@ mMaterialDialog.setNegativeButton("CANCLE", new View.OnClickListener() {
     }
 });
 ```
+
+Or
+
+```java
+mMaterialDialog = new MaterialDialog(this);
+mMaterialDialog.setTitle("MaterialDialog")
+    .setMessage("hello world!")
+    .setPositiveButton("OK", new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            mMaterialDialog.dismiss();
+            ...
+        }
+    })
+    .setNegativeButton("CANCLE", new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            mMaterialDialog.dismiss();
+            ...
+        }
+    })
+    .show();
+```
+
 With the first init, it will show automatedly. Or, you can init it and call the `mMaterialDialog.show()` to show the dialog simply.
 
 ## About me
