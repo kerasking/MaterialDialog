@@ -14,15 +14,15 @@ import android.widget.TextView;
  * Created by drakeet on 9/28/14.
  */
 public class MaterialDialog {
-    Context mContext;
-    AlertDialog mAlertDialog;
-    TextView mTitleView;
-    TextView mMessageView;
-    LinearLayout mButtonLayout;
+    private Context mContext;
+    private AlertDialog mAlertDialog;
+    private TextView mTitleView;
+    private TextView mMessageView;
+    private LinearLayout mButtonLayout;
 
     public MaterialDialog(Context context) {
         this.mContext = context;
-        mAlertDialog = new android.app.AlertDialog.Builder(mContext).create();
+        mAlertDialog = new AlertDialog.Builder(mContext).create();
         show();
         Window window = mAlertDialog.getWindow();
         window.setContentView(R.layout.layout_materialdialog);
@@ -35,20 +35,24 @@ public class MaterialDialog {
         mAlertDialog.show();
     }
 
-    public void setTitle(int resId) {
+    public MaterialDialog setTitle(int resId) {
         mTitleView.setText(resId);
+        return this;
     }
 
-    public void setTitle(String title) {
+    public MaterialDialog setTitle(String title) {
         mTitleView.setText(title);
+        return this;
     }
 
-    public void setMessage(int resId) {
+    public MaterialDialog setMessage(int resId) {
         mMessageView.setText(resId);
+        return this;
     }
 
-    public void setMessage(String message) {
+    public MaterialDialog setMessage(String message) {
         mMessageView.setText(message);
+        return this;
     }
 
     /**
@@ -56,7 +60,7 @@ public class MaterialDialog {
      * @param text the name of button
      * @param listener
      */
-    public void setPositiveButton(String text, final View.OnClickListener listener) {
+    public MaterialDialog setPositiveButton(String text, final View.OnClickListener listener) {
         Button button = new Button(mContext);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         button.setLayoutParams(params);
@@ -68,6 +72,7 @@ public class MaterialDialog {
         button.setPadding(dip2px(12), 0, dip2px(32), dip2px(16));
         button.setOnClickListener(listener);
         mButtonLayout.addView(button);
+        return this;
     }
 
     /**
@@ -75,7 +80,7 @@ public class MaterialDialog {
      * @param text the name of button
      * @param listener
      */
-    public void setNegativeButton(String text, final View.OnClickListener listener) {
+    public MaterialDialog setNegativeButton(String text, final View.OnClickListener listener) {
         Button button = new Button(mContext);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         button.setLayoutParams(params);
@@ -94,6 +99,7 @@ public class MaterialDialog {
             button.setLayoutParams(params);
             mButtonLayout.addView(button);
         }
+        return this;
     }
 
     public void dismiss() {
@@ -104,4 +110,5 @@ public class MaterialDialog {
         final float scale = mContext.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
     }
+    
 }
